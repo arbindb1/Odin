@@ -141,8 +141,8 @@ $ mkdir 2016-05-20/data
 $ mkdir 2016-05-20/data/processed
 $ mkdir 2016-05-20/data/raw
 ```
-
 - Achieves goal using relative path.
+
 
 ```bash
 $ mkdir 2016-05-20
@@ -151,8 +151,8 @@ $ mkdir data
 $ cd data
 $ mkdir raw processed
 ```
-
 - Achieves goal using absolute path.
+
 
 ```bash
 $ mkdir 2016-05-20/data/raw
@@ -160,11 +160,13 @@ $ mkdir 2016-05-20/data/processed
 ```
 - Throws error because one cannot create directory along with sub directory in one command using only mkdir.
 
+
 ```bash
 $ mkdir -p 2016-05-20/data/raw
 $ mkdir -p 2016-05-20/data/processed
 ```
 - Achieves the goal by overcomming the issue above by using -p option which allow mkdir to create directory along with subdirectory in single command.
+
 
 ```bash
 $ mkdir 2016-05-20
@@ -172,5 +174,5 @@ $ cd 2016-05-20
 $ mkdir data
 $ mkdir raw processed
 ```
--Creates data,raw,processed in same directory.
+- Creates data,raw,processed in same directory.
 
