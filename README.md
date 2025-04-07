@@ -176,3 +176,11 @@ $ mkdir raw processed
 ```
 - Creates data,raw,processed in same directory.
 
+## Absolute and Relative path in anchor
+### Absolute Path
+ - Full path to website including domains.
+
+### Relative Path
+ - Path to pages on same website.
+
+
