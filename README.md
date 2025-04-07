@@ -96,10 +96,12 @@ The resulting directory structure should look like this:
 ```
 
 ### Solution:
+```bash
   cp *dataset* backup/dataset 
   cp *calibration* backup/calibration
   cp 2015-11-* send_to_bob/all_november_files/
   cp *23-dataset* send_to_bob/all_datasets_created_on_a_23rd/
+```
 ### 2) Organizing Directories And Files
   Jamie is working on a project, and she sees that her files aren’t very well organized:
 ```bash
