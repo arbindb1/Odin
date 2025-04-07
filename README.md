@@ -17,8 +17,7 @@
 
 ### Wildcar Questions
 - 1)Sam has a directory containing calibration data, datasets, and descriptions of the datasets:
-	```bash
-		.
+```bash
 ├── 2015-10-23-calibration.txt
 ├── 2015-10-23-dataset1.txt
 ├── 2015-10-23-dataset2.txt
@@ -38,4 +37,4 @@
     ├── all_datasets_created_on_a_23rd
     └── all_november_files
 
-	```
+```
