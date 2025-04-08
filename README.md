@@ -183,4 +183,13 @@ $ mkdir raw processed
 ### Relative Path
  - Path to pages on same website.
 
+### What is Tabnapping?
+- A phishing trick where a website you opened in a new tab secretly hijacks your original site and  changes it and mimics its to look like original  when you're not looking — to steal your password when you come back to it.
+- This happens because when new tab is opened by clicking link in original site the link can contain melicious js code throught which it can use window.opener.location to hijack and modify origianl site.
 
+### How to prevent Tabnapping?
+- use rel="noopener noreferrer"
+#### how does this prevent tabnapping?
+ - Noopener: prevents access to data of original site.
+ - noreferrer: hides where you came from
+ - When noreferrer and noopener are present hacker cannot use window.opener.location as noopener breaks connection between the new tab and the original tab. 
