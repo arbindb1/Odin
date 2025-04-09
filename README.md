@@ -195,7 +195,7 @@ $ mkdir raw processed
  - When noreferrer and noopener are present hacker cannot use window.opener.location as noopener breaks connection between the new tab and the original tab. 
 
 
-## The seven rules of great Git commit message
+# The seven rules of great Git commit message
 ### Separete commit head and body.
 ### Keep Subject character limit 50 or less
 ### Start subject with capitalization.
