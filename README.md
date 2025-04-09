@@ -196,18 +196,18 @@ $ mkdir raw processed
 
 
 # The seven rules of great Git commit message
-### Separete commit head and body.
-### Keep Subject character limit 50 or less
-### Start subject with capitalization.
-### Do not end subject with period.
-### Use the imperative mood in the subject line.
+### - Separete commit head and body.
+### - Keep Subject character limit 50 or less
+### - Start subject with capitalization.
+### - Do not end subject with period.
+### - Use the imperative mood in the subject line.
     - Indicative mood: Reporting fact ex: Fixed bug with Y.
     - Imperative mood:Commanding tone ex: Fix bug with Y.
 	- The commit subject should be able to complete following sentences.
 		- If applied, this commit will fix buyg with Y ( works on imperative mood).
 		- If applied, this commit will fixed bug with Y (Doesn't work with indicative mood).
-### Wrap the body  at 72 characters
-### Use the body to explain what and why vs how
+### - Wrap the body  at 72 characters
+### - Use the body to explain what and why vs how
     - why made change in original(what was wrong whith that).
     - the way they work now.
     - why solve it the way you did.
