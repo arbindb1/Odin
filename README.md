@@ -211,3 +211,21 @@ $ mkdir raw processed
     - why made change in original(what was wrong whith that).
     - the way they work now.
     - why solve it the way you did.
+
+
+## CSS
+### Selectors
+- Universal
+- Type/Element 
+- class
+- id
+- Grouping (,)
+- Chaining (class.class)
+- Descendant
+
+## Image Height and Width property and their values
+ - By default height and width of image is set to the original height and width of image.
+ ### Auto Value
+  - Auto value is used to balance the propotion of image.
+    Ex: height: auto; width:500px;
+    if original height of the image was 500 and width was 1000px then with auto as value it sets height to 250px.
