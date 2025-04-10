@@ -229,3 +229,8 @@ $ mkdir raw processed
   - Auto value is used to balance the propotion of image.
     Ex: height: auto; width:500px;
     if original height of the image was 500 and width was 1000px then with auto as value it sets height to 250px.
+
+## Inspect Element
+### Strike Through
+ - When we inspect element in browser we can see a cut in css style that is being overwritten by same property.The cut is called strike through.
+
