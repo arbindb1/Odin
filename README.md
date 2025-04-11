@@ -297,11 +297,11 @@ On the other hand for second div box-sizing is set to border-box and here we can
 #### Revision Task
 ##### Tasl 1: In this task, there are two boxes below, one is using the standard box model, the other the alternate box model. Change the width of the second box by adding declarations to the .alternate class, so that it matches the visual width of the first box.
 
-HTML 
+###### HTML 
 <div class="box">I use the standard box model.</div>
 <div class="box alternate">I use the alternate box model.</div>
 
-Css
+###### Css
 body {
   font: 1.2em / 1.5 sans-serif;
 }
