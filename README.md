@@ -236,9 +236,12 @@ $ mkdir raw processed
 
 
 ## Box Model
-### Margin merger
- - if two element have margin in same direction the merger applies where greatest out of two margin value is applied.
- - ex: .div1 {margin-bottom:20px;} .div2{margin-top:30px;} 30px margin will be applied and 20px will be cancelled instead of both value adding up.
+### Margin collapsing
+- Depending on whether two elements whose margins touch have positive or negative margins, the results will be different:
+
+- Two positive margins will combine to become one margin. Its size will be equal to the largest individual margin.
+- Two negative margins will collapse and the smallest (furthest from zero) value will be used.
+If one margin is negative, its value will be subtracted from the total.
 
 ### box-sizing
  - The value given to this property defined if the padding,border given will be added to actual width and height or it will be managed so that it takes actual width and height instead of adding  to it.
@@ -272,3 +275,73 @@ In the given example there are two div elements having same width and height sam
 The first div is set to box-sizing:content-box; which is the default value as it can be seen that the padding and margin given is being added to existing width and height to form a new total size.
 
 On the other hand for second div box-sizing is set to border-box and here we can see that instead of adding to existing width and height the browser manages in such a way that divides and balance width and height maintaining original width and height.
+
+### Inline and Block elements
+#### Inline Elements
+  - Doesn't respect width and height.
+  - Doesn't push other elements when applied top/bottom padding,margin,border.
+  - Pushes elemets around it when applied left/right padding,margin,border.
+  - No default line break.
+
+#### Block Elements
+   - Respect width and height.
+   - Pushesh other elements when applied padding,margin,border.
+   - Default Line break.
+
+#### Inline-Block
+  - Display:inline-block;
+  - Respects width and height.
+  - No line break.
+  - Pushesh other elements when applied padding,margin,border.
+
+#### Revision Task
+##### Tasl 1: In this task, there are two boxes below, one is using the standard box model, the other the alternate box model. Change the width of the second box by adding declarations to the .alternate class, so that it matches the visual width of the first box.
+
+HTML 
+<div class="box">I use the standard box model.</div>
+<div class="box alternate">I use the alternate box model.</div>
+
+Css
+body {
+  font: 1.2em / 1.5 sans-serif;
+}
+.box {
+  border: 5px solid rebeccapurple;
+  background-color: lightgray;
+  padding: 40px;
+  margin: 40px;
+  width: 300px;
+  height: 150px;
+}
+
+.alternate {
+  box-sizing: border-box;
+}
+
+##### Task 2: In this task, the inline element has a margin, padding and border. However, the lines above and below are overlapping it. What can you add to your CSS to cause the size of the margin, padding, and border to be respected by the other lines, while still keeping the element inline?
+
+HTML
+<div class="box">
+  <p>
+    Veggies es bonus vobis, <span>proinde vos postulo</span> essum magis
+    kohlrabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean
+    garlic.
+  </p>
+
+  <p>
+    Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette
+    tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato.
+    Dandelion cucumber earthnut pea peanut soko zucchini.
+  </p>
+</div>
+
+CSS
+body {
+  font: 1.2em / 1.5 sans-serif;
+}
+
+.box span {
+  background-color: pink;
+  border: 5px solid black;
+  padding: 1em;
+}
