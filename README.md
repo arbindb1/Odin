@@ -268,6 +268,7 @@ outcome:
 
 
 In the given example there are two div elements having same width and height same padding and margin and the only thing different is box sizing.
+
 The first div is set to box-sizing:content-box; which is the default value as it can be seen that the padding and margin given is being added to existing width and height to form a new total size.
 
 On the other hand for second div box-sizing is set to border-box and here we can see that instead of adding to existing width and height the browser manages in such a way that divides and balance width and height maintaining original width and height.
