@@ -246,18 +246,26 @@ $ mkdir raw processed
  
 Example: 
 First Div element
-   ![Alt text](first-div.png)
-   ![Alt text](first-div-model.png)
+   - ![Alt text](first-div.png)
+   - ![Alt text](first-div-model.png)
+
+
 
 Second Div Element
-    ![Alt text](second-div.png)
-    ![Alt text](second-div-model.png)
+  - ![Alt text](second-div.png)
+  - ![Alt text](second-div-model.png)
+
+
 
 Styling:
-    ![Alt text](styling.png)
+  - ![Alt text](styling.png)
+
+
 
 outcome:
-    ![Alt text](outcome.png)
+  - ![Alt text](outcome.png)
+
+
 
 In the given example there are two div elements having same width and height same padding and margin and the only thing different is box sizing.
 The first div is set to box-sizing:content-box; which is the default value as it can be seen that the padding and margin given is being added to existing width and height to form a new total size.
