@@ -276,6 +276,8 @@ The first div is set to box-sizing:content-box; which is the default value as it
 
 On the other hand for second div box-sizing is set to border-box and here we can see that instead of adding to existing width and height the browser manages in such a way that divides and balance width and height maintaining original width and height.
 
+Box Sizing Source: https://www.youtube.com/watch?v=HdZHcFWcAd8
+
 ### Inline and Block elements
 #### Inline Elements
   - Doesn't respect width and height.
@@ -345,3 +347,19 @@ body {
   border: 5px solid black;
   padding: 1em;
 }
+
+Inline/Block display source : https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/Box_model
+
+
+## Margin
+### Margin defining ways
+ - margin:top right bottom left;
+ - margin:top-right bottom-left
+ - margin: top right-bottom left;
+
+ ### Margin Auto and centering
+  - Auto is only usefule for horizontal centering.
+  - The width needs to be defined for this to work.
+  - if width is not defined or it is not intended for horizontal centring it will have no effect.
+
+  Learning Source: https://css-tricks.com/almanac/properties/m/margin/
