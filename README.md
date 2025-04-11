@@ -234,3 +234,32 @@ $ mkdir raw processed
 ### Strike Through
  - When we inspect element in browser we can see a cut in css style that is being overwritten by same property.The cut is called strike through.
 
+
+## Box Model
+### Margin merger
+ - if two element have margin in same direction the merger applies where greatest out of two margin value is applied.
+ - ex: .div1 {margin-bottom:20px;} .div2{margin-top:30px;} 30px margin will be applied and 20px will be cancelled instead of both value adding up.
+
+### box-sizing
+ - The value given to this property defined if the padding,border given will be added to actual width and height or it will be managed so that it takes actual width and height instead of adding  to it.
+
+ 
+Example: 
+First Div element
+   ![Alt text](first-div.png)
+   ![Alt text](first-div-model.png)
+
+Second Div Element
+    ![Alt text](second-div.png)
+    ![Alt text](second-div-model.png)
+
+Styling:
+    ![Alt text](styling.png)
+
+outcome:
+    ![Alt text](outcome.png)
+
+In the given example there are two div elements having same width and height same padding and margin and the only thing different is box sizing.
+The first div is set to box-sizing:content-box; which is the default value as it can be seen that the padding and margin given is being added to existing width and height to form a new total size.
+
+On the other hand for second div box-sizing is set to border-box and here we can see that instead of adding to existing width and height the browser manages in such a way that divides and balance width and height maintaining original width and height.
