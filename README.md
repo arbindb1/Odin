@@ -296,7 +296,7 @@ Box Sizing Source: https://www.youtube.com/watch?v=HdZHcFWcAd8
   - No line break.
   - Pushesh other elements when applied padding,margin,border.
 
-#### Revision Task
+## Revision Task I
 ##### Tasl 1: In this task, there are two boxes below, one is using the standard box model, the other the alternate box model. Change the width of the second box by adding declarations to the .alternate class, so that it matches the visual width of the first box.
 
 ###### HTML 
@@ -363,3 +363,30 @@ Inline/Block display source : https://developer.mozilla.org/en-US/docs/Learn_web
   - if width is not defined or it is not intended for horizontal centring it will have no effect.
 
   Learning Source: https://css-tricks.com/almanac/properties/m/margin/
+
+  ## Flex Box
+   - flex:1; is a short hand form of flex-grow, flex-shirnk and flex-basis
+   - when flex:1; is set it represents flex-grow:1;, flex-shirnk:1; and flex-basis:0;
+
+   ### What is flex grow,shrink and basis
+    - flex grow,shirk and basis are used to define how the item inside flex container grows or shrink with respect to or no respect to its width and height.
+
+  #### flex grow
+      - flex grow defines how the items will grow according to extra flex space available(unoccupied flex cells).
+      - flex-grow:1; means all the item will grow in equal proportion.
+      - if an item is set to flex-grow:2; then it means respective item will grow X2 times more than other items.
+
+  #### flex shrink
+      - same as grow but for shrinking.
+      - This triggers only when the width of container becomes less than the collective width of items.
+      - to adjust with the new view window it shrinks as per the specified value.
+      - same as for grow in shrink it shrinks x2 time more than other item if set flex-shrink:2;
+
+
+  #### flex basis
+      - The value of flex basis defines the initial size of item before grow or shrink.
+      - default value flex: 0 1 auto; means that flex-grow is 0 , flex-shrink is 1 and flex-basis is auto
+          * What this does is that the flex items doesnt expand to take up remaining flex space but shrink is allowed to adjust the items.
+          * flex basis to auto takes the width value initiated to the item as initial start before grow and shrink
+      - flex: 1 1 0; this is used when all the item need to be shown as shame size irrespective of the size of content inside them.
+          * while 1 and 1 allow grow and shrink 0 is the main thing to consider as it signifies no fixed initial size so with flex grow set to 1 the items will be adjusted evenly to fill the gap.
