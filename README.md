@@ -390,3 +390,27 @@ Inline/Block display source : https://developer.mozilla.org/en-US/docs/Learn_web
           * flex basis to auto takes the width value initiated to the item as initial start before grow and shrink
       - flex: 1 1 0; this is used when all the item need to be shown as shame size irrespective of the size of content inside them.
           * while 1 and 1 allow grow and shrink 0 is the main thing to consider as it signifies no fixed initial size so with flex grow set to 1 the items will be adjusted evenly to fill the gap.
+
+
+  ### Max and min content
+      - width:max-content ensures that an element will never be larger than its container.
+      - width:min-content ensures that an element will never be smaller than the content inside it.It achieves that by allocating the size of the longest content size to all other sizes.
+
+  ### justify content and align item
+      Before diving into concept of justify content and align item some core knowledge like main axis and cross axis.
+
+      #### Main axis
+      - Main axis is the direction in which the flex is flowing.if set to row then row is main axis.
+
+      #### cross axis 
+      - Cross axis is the opposite axis of the direction set to flex. 
+
+    - so if direction of flex is row then row is main axis and column is cross axis.
+
+     #### justify content
+     - justify content is the flex property used to justify position of items inside container in direction specified in flex.
+     - ex: justify-content:center;flex-direction:row; position the flex items in the center horizontally if any space available.
+     
+     #### align item
+     - align item is the flex property used to set positioning of items in cross axis.
+     - it also have align-self property to define individual positioning of an item.
