@@ -414,3 +414,6 @@ Inline/Block display source : https://developer.mozilla.org/en-US/docs/Learn_web
      #### align item
      - align item is the flex property used to set positioning of items in cross axis.
      - it also have align-self property to define individual positioning of an item.
+
+
+     align-item:stretch is default value of align-item which streaches the content to distribute the content size evenly.
