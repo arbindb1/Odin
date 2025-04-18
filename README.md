@@ -417,3 +417,50 @@ Inline/Block display source : https://developer.mozilla.org/en-US/docs/Learn_web
 
 
      align-item:stretch is default value of align-item which streaches the content to distribute the content size evenly.
+
+     ### Flex axis knowledge check(Answer on you own word.)
+     #### How do you make flex items arrange themselves vertically instead of horizontally?
+     #### In a column flex-container, what does flex-basis refer to?
+     #### In a row flex-container, what does flex-basis refer to?
+     #### why do the previous two question shave different answers?
+
+
+    ### Align-content,order,align-self,flex-direction,flex-wrap,flex-flow
+
+    #### Align-content
+      - align content is used to manage spacing between items
+
+    ### order
+      - order is used in items of flex container and by default contains value 0;
+      - value more than zero leads to an item placed at the end of the specified direction if it is the highest order.
+
+    ### align-self
+      - used to align an item independent of others.
+
+    ### flex-direction: column-reverse,row-reverse
+        - column and row reverse flips the items in the respective direction.
+        - This also changes the direction prospective.
+
+    ### flex-wrap: nowrap, wrap, wrap-reverse
+        - wrap allow content to wrap to fit the shrinking container.
+        - nowrap as name suggest doesnt allow content to wrap.
+        - wrap-reverse wraps the content and flip them in specified direction.
+
+    ### flex-flow
+        - due to flex direction and flex wrap being very often used new property was introduced which allow defining of both in one line.
+        - flex-flow: direction wrap;
+
+
+    ## Javascript
+    ### Template literal
+      - Can embed js
+      - can declare over multiple lines.
+
+    ### Falsy and Truthy value
+      - values that are false by default like 0,"",null,undefined,NaN are Falsy value.
+      - values other than these are truthy.
+
+    ### Debugger in devtool
+
+
+## JS Function Skill Test 1: https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting/Test_your_skills/Functions
