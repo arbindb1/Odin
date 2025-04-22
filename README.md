@@ -464,3 +464,14 @@ Inline/Block display source : https://developer.mozilla.org/en-US/docs/Learn_web
 
 
 ## JS Function Skill Test 1: https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting/Test_your_skills/Functions
+
+
+## Call Stack
+ - Global Call stack
+ - function call stack.
+
+
+## Errors
+### Syntax Error
+### Reference Error
+### Type Error
