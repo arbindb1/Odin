@@ -485,7 +485,28 @@ Inline/Block display source : https://developer.mozilla.org/en-US/docs/Learn_web
 - Avoid extremely large function(Break it down).
 - Use naming standards for functions and variables
     - Camel case,start with noun,meaningful/relevent naming,ALLCAPS_WITHUNDERSCORE if consistent/fixed value.
+    - line break after every 80 character.
+    - line break after operator.
 
 - Treat changes with caution.
 - Avodi indiscriminate mixing of coding language(avoid inline css,jumbled js).
 - Summarize you imports (many links embedded in one).
+
+
+## Some useful array methods
+### Non destructive methods
+ - at()
+ - join()
+ - concat()
+ - flatMap()
+ - toSplice(position of new element,how many item to remove,new elements,new elements......)
+ - slice()
+
+### Destructive methods
+  - pop()-from last
+  - push()-from last
+  - shift()-from first
+  - unshift()-from first
+  - delete()-leaves undefined array slot.
+  - copyWithin()-copies element in desired position.
+  - splice(position of new element,how many item to remove,new elements,new elements......)
