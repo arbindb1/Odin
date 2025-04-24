@@ -475,3 +475,17 @@ Inline/Block display source : https://developer.mozilla.org/en-US/docs/Learn_web
 ### Syntax Error
 ### Reference Error
 ### Type Error
+
+## 10 Principles of clean code
+- Revise your logic before coding(pseudo).
+- Clearly expose the sturcture of the page(hierarcy).
+- Use correct and consistent indentation.
+- Write explanatory comments if necessary only.
+- Avoid misusing comments.
+- Avoid extremely large function(Break it down).
+- Use naming standards for functions and variables
+    - Camel case,start with noun,meaningful/relevent naming,ALLCAPS_WITHUNDERSCORE if consistent/fixed value.
+
+- Treat changes with caution.
+- Avodi indiscriminate mixing of coding language(avoid inline css,jumbled js).
+- Summarize you imports (many links embedded in one).
