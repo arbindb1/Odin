@@ -512,3 +512,21 @@ Inline/Block display source : https://developer.mozilla.org/en-US/docs/Learn_web
   - splice(position of new element,how many item to remove,new elements,new elements......)
 
 ## Test Driven Development(TDD)
+
+## Reduce()
+Example: const findTheOldest = function(people){
+    return people.reduce((oldPerson,newPerson)=>{
+      const oldAge = age(oldPerson.yearOfBirth,oldPerson.yearOfDeath);
+      const newAge = age(newPerson.yearOfBirth,newPerson.yearOfDeath);
+      return newAge > oldAge?newPerson:oldPerson;
+    });
+  }
+  
+  function age(birth,death){
+    if(!death){
+        death = new Date().getFullYear();
+    }
+    return death - birth;
+  }
+// Do not edit below this line
+module.exports = findTheOldest;
