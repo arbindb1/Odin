@@ -528,5 +528,47 @@ Example: const findTheOldest = function(people){
     }
     return death - birth;
   }
-// Do not edit below this line
-module.exports = findTheOldest;
+
+## DOM Manipulation
+### Query selector
+    parentNode.querySelectorAll(selector) returns node list of all the matches of selector(not array).
+
+### Append elements
+  parentNode.insertBefore(newNode, referenceNode) - inserts new node into parent node before reference node.
+
+### Risk of using innerHTML more often(JS Injection).
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Document</title>
+            <link rel="stylesheet" href="style.css">
+        </head>
+        <body>
+        <div id="container">
+        <input type="text" id="input" placeholder="Enter here"/>
+        <button id="submit">submit</button>
+        <button id="saveCookie">Save Cookie</button>
+        <div id="outputContainer"></div>
+        </div>
+        </body>
+        <script>
+            let container = document.getElementById('outputContainer');
+            let submit = document.getElementById('submit');
+            let saveCookie = document.getElementById('saveCookie');
+            submit.addEventListener('click',()=>{
+                let input = document.getElementById('input');
+                container.innerText ="<label>"+input.value+"</label>";
+            });
+            saveCookie.addEventListener('click', () => {
+            document.cookie = "username=" + encodeURIComponent("John Doe") + "; expires=Tue, 29 Apr 2025 12:00:00 UTC; path=/";
+            document.cookie = "password=" + encodeURIComponent("someone") + "; expires=Tue, 29 Apr 2025 12:00:00 UTC; path=/";
+        });
+
+
+        </script>
+        </html>
+
+
+## Event bubbling,capturing ,delegation

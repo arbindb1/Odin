@@ -1,14 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="first">Default box sizing</div>
-    <br><br>
-    <div class="second">Border Box</div>
-</body>
+    <title>Simple DOM example</title>
+  </head>
+  <body>
+      <section>
+            <h1>My Shopping List</h1>
+            <form action="#">
+                <label for="itemList">Enter a new item:</label>
+                <input type="text" id="item"/>
+                <button id="itemButton">Add item</button>
+            </form>
+            <ul id="itemList">
+
+            </ul>
+      </section>
+      <script>
+        let itemAddButton = document.getElementById('itemButton');
+        let itemList = document.getElementById('itemList');
+        itemAddButton.addEventListener('click',()=>{
+            let item = document.getElementById('item').value;
+            let list = document.createElement('li');
+            let span = document.createElement('span');
+            let deleteButton = document.createElement('button');
+            span.textContent = item;
+            deleteButton.textContent = "Delete";
+            deleteButton.addEventListener('click',()=>{
+                list.remove();
+            })
+            list.append(span,deleteButton);
+            itemList.append(list);
+            document.getElementById('item').value = ""; // ✅ Clear input after adding
+            document.getElementById('item').focus();
+        });
+
+         
+
+
+      </script>
+  </body>
 </html>
