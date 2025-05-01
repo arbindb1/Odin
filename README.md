@@ -571,4 +571,76 @@ Example: const findTheOldest = function(people){
         </html>
 
 
-## Event bubbling,capturing ,delegation
+## Event bubbling,capturing ,Propagation
+-> Event bubbling and capturing is the concept of how nested event listener work / flow of event trigger.
+
+### Default behaviour of listener
+-> in capturing process the program identifies all the elements(parent,childs) from top to bottom.
+-> in bubbling process the events are triggered from child most to parent most.
+
+(Note: addEventListener takes three parameter (event,function,useCaptureBooleanValue)   and useCaptureBooleanValue is by default false)
+
+### DEMO of different outcome while clicking on child element.
+#### HTML
+    <!DOCTYPE html>
+    <html lang="en-US">
+      <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Simple DOM example</title>
+        <style>
+          .grandParent{
+            width:500px;
+            height:500px;
+            background-color: red;
+          }
+          .parent{
+            width:200px;
+            height:200px;
+            background-color: green;
+          }
+          .child{
+            width:100px;
+            height:100px;
+            background-color: blue;
+          }
+        </style>
+      </head>
+      <body>
+            <div class="grandParent">
+              <div class="parent">
+                <div class="child">
+
+                </div>
+              </div>
+            </div>
+
+#### Default behaviour
+
+        let divs = document.querySelectorAll('div');
+
+        divs.forEach(div => div.addEventListener('click',(e)=>{
+          console.log(e.currentTarget.classList.value);
+        }));
+
+![alt text](images/defaultListener.png)
+
+
+#### With useCapture set to true
+        let divs = document.querySelectorAll('div');
+
+        divs.forEach(div => div.addEventListener('click',(e)=>{
+          console.log(e.currentTarget.classList.value);
+        },true));
+
+![alt text](images/useCaptureListener.png)
+
+#### With useCapture false and stopPropagation
+
+        divs.forEach(div => div.addEventListener('click',(e)=>{
+          e.stopPropagation();
+          console.log(e.currentTarget.classList.value);
+        }));
+
+
+![alt text](images/stopPropagation.png)
